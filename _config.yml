@@ -13,6 +13,9 @@ author:
   facebook_username: undeflab
   github_username:  undeflab
   # linkedin_username:  joshgerdes
+contact:
+  form:
+    url: 'https://docs.google.com/forms/d/1YQNiTl94_eRpVl81ZyVFdkG6xVEWdPqW1VemxoUILOk/viewform'
 
 defaults:
   -
