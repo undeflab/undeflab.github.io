@@ -1,0 +1,18 @@
+/* TEAM */
+Contact: https://docs.google.com/forms/d/1YQNiTl94_eRpVl81ZyVFdkG6xVEWdPqW1VemxoUILOk/viewform
+
+/* THANKS */
+
+Giving: Jekyll theme
+Name: Josh Gerdes
+Site: http://joshgerdes.com/
+
+Giving: Background Photo
+Name: sergee bee
+Site: https://unsplash.com/sergeebee
+
+/* SITE */
+Last update: 2016/04/03
+Standards: HTML5, CSS3
+Components: Jekyll
+Software: Emacs

@@ -1,0 +1,43 @@
+# Site settings
+title: UndefLab
+description: 'UndefLab - a team for software development'
+url: 'https://www.undeflab.com'
+baseurl: '/'
+google_analytics: 'UA-75813981-1'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'UndefLab'
+  # email: 'no-reply@undeflab.com'
+  # twitter_username: _undeflab
+  # instagram_username: undeflab
+  facebook_username: undeflab
+  github_username:  undeflab
+  # linkedin_username:  joshgerdes
+contact:
+  form:
+    url: 'https://docs.google.com/forms/d/1YQNiTl94_eRpVl81ZyVFdkG6xVEWdPqW1VemxoUILOk/viewform'
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /posts/:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
