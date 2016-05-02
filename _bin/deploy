@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -eu
+
+cd $(dirname $0)/../
+bundle exec jekyll build
+gsutil -m rsync -d -r _site gs://www.undeflab.com
