@@ -1,6 +1,6 @@
 # Site settings
 title: UndefLab
-description: 'UndefLab - a team for software development'
+description: 'A team for software development'
 url: 'https://www.undeflab.com'
 baseurl: '/'
 google_analytics: 'UA-75813981-1'
