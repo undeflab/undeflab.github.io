@@ -3,5 +3,19 @@
 set -eu
 
 cd $(dirname $0)/../
+
+NOW=$(date +%Y%m%d%H%M%S)
+BRANCH_FULL=$(git rev-parse --abbrev-ref HEAD)
+BRANCH_ABBR=${BRANCH_FULL#*/}
+BRANCH_PRFX=${BRANCH_FULL%%/*}
+
+if [ "$BRANCH_PRFX" != "release" ] && [ "$BRANCH_PRFX" != "hotfix" ]; then
+  echo "This branch is NOT prepared to deploy: $BRANCH_FULL" >&2
+  exit 1
+fi
+
+bundle install
 bundle exec jekyll build
+
+git flow $BRANCH_PRFX finish -F -p -m "$NOW" $BRANCH_ABBR
 gsutil -m rsync -d -r _site gs://www.undeflab.com

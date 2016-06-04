@@ -1,6 +1,6 @@
 # Site settings
 title: UndefLab
-description: 'UndefLab - a team for software development'
+description: 'A team for software development'
 url: 'https://www.undeflab.com'
 baseurl: '/'
 google_analytics: 'UA-75813981-1'
@@ -13,6 +13,7 @@ author:
   # instagram_username: undeflab
   facebook_username: undeflab
   github_username:  undeflab
+  # bitbacket_username:  undeflab
   # linkedin_username:  company/undeflab
 contact:
   form:
